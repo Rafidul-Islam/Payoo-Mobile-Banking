@@ -5,13 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payoo Mobile Bank</title>
     <link rel="shortcut icon" href="assets/payoo.png" type="image/x-icon" />
+    <!-- Tailwind link -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- DaisyUI link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <section id="login-section " class="">
-      <img class="border absolute" src="assets/bg.png" alt="" />
-      <img class="border relative" src="assets/Group.png" alt="" />
+  <body class="bg-gray-800">
+    <section class="max-w-md min-h-screen bg-gray-300 mx-auto">
+      <div class="flex justify-center items-center flex-col pt-5">
+        <img src="assets/bg.png " class="w-3/5 relative" alt="" />
+        <img src="assets/Group.png " class="absolute top-25" alt="" />
+      </div>
+      <!-- login Section -->
+      <div class=" ">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label class="fieldset-label">Account Number</label>
+                <input
+                  type="email"
+                  class="input"
+                  id="account-number"
+                  placeholder="Number"
+                  value=""
+                />
+                <label class="fieldset-label">Pin</label>
+                <input
+                  type="password"
+                  class="input"
+                  id="pin-number"
+                  placeholder="Pin"
+                  value=""
+                />
+                <div><a class="link link-hover">Forgot password?</a></div>
+                <button id="login-btn" class="btn btn-neutral mt-4">
+                  Login
+                </button>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <head> </head>
+    <script src="Script/login.js"></script>
+    <script src="Script/addmoney.js"></script>
   </body>
 </html>
